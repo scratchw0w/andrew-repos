@@ -12,7 +12,7 @@ public class WelcomeToTheCity {
 
     public static void main(String[] args) {
 
-        String[] array = new String[] {"John", "Smith"};
+        String[] array = new String[] {"Whole", "Sperm"};
         System.out.println(sayHello(array, "Phoenix", "Arizona"));
     }
 
