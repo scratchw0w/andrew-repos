@@ -5,7 +5,6 @@ public class EvenOrOdd {
         String result = even_or_odd(6);
         System.out.println(result);
     }
-
     //Create a function that takes an integer as an argument
 //and returns "Even" for even numbers or "Odd" for odd numbers.
     public static String even_or_odd(int number) {
