@@ -9,5 +9,7 @@ public class MainApplication {
     public static void main(String[] args) {
         Employee andrew = new Employee("Andrew", "Bosiy", 26, 1000);
         andrew.allInformation();
+        Employee maxim = new Employee("Maxim", "Basov", 21, 5000);
+        maxim.allInformation();
     }
 }

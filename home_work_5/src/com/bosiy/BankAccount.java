@@ -2,6 +2,7 @@ package com.bosiy;
 
 public class BankAccount {
 
+    private static final int MINIMAL_DEBIT_BALANCE = 0;
     private String accountOwner;
     private boolean isCredit;
     private int accountNumber;
@@ -9,9 +10,8 @@ public class BankAccount {
 
 
     public BankAccount(String accountOwner, boolean isCredit, int accountNumber, int balance) {
-
         if(!isCredit) {
-            if(balance < 0) {
+            if(balance < MINIMAL_DEBIT_BALANCE) {
                 System.out.println("Your balance can't be negative!");
                 return;
             }
