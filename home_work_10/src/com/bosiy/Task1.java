@@ -1,26 +1,24 @@
 package com.bosiy;
 
-import java.util.Arrays;
-
 public class Task1 {
     public static void main(String[] args) {
+        int[] numbersArray = {2, 7, 3, 12, 8, 15, 1};
 
-        int[] value = {2, 7, 3, 12, 8, 15, 1};
-
-        for (int i = 0; i < value.length; i++) {
-            System.out.print(value[i] + "; ");
+        for (int index = 0; index < numbersArray.length; index++) {
+            System.out.print(numbersArray[index] + "; ");
         }
 
         int countOfEven = 0;
-        int countOfOdd = 0;
 
-        for (int i = 0; i < value.length; i++) {
-            if (value[i] % 2 == 0) {
+        for (int index = 0; index < numbersArray.length; index++) {
+            if (numbersArray[index] % 2 == 0) {
                 countOfEven++;
-            } else {
-                countOfOdd++;
-            }
+            } // else {
+//                countOfOdd++;
+//            }
         }
+
+        int countOfOdd = numbersArray.length - countOfEven;
 
         System.out.println();
         System.out.print("You have even number: " + countOfEven + "; ");
